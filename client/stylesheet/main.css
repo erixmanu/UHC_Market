@@ -4,14 +4,14 @@
   font-color: #FFFFFF;
 }
 
-ul{
+ul{                /*Cart, Sign up, Log in*/
   font-family: 'Source Sans Pro' !important;
-  font-size: 13px;
+  font-size: 16px;
 }
 
-a.navbar-brand{
+a.navbar-brand{               /*UHC_Market - Brand*/
   font-family: 'Source Sans Pro' !important;
-  font-size: 10px;
+  font-size: 24px;
 }
 
 .input-group{
@@ -30,7 +30,7 @@ input-group-btn{
 
 body{
   padding-top: 70px;
-  /*min-height: 2000px;*/
+  min-height: 2000px;
 }
 
 article{
@@ -42,12 +42,8 @@ li:hover, div.navbar-header:hover{
   background-color: #8835AB;
 }
 
-.navbar-brand{
-  padding-left: 25px;
-}
-
 .fa-search, .fa-shopping-cart {
-  color: white;
+  color: #FFFFFF;
 }
 
 #search_button{
@@ -62,7 +58,7 @@ li:hover, div.navbar-header:hover{
     color: inherit;
 }
 
-.col-xs-6, .col-sm-4, .col-md-3, .col-lg-2{
+.col-xs-6, .col-sm-4, .col-md-3, .col-lg-2{ /*panels (template > on_sale_article)*/
   padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
@@ -186,3 +182,55 @@ div.container{
   padding-right: 0px;
 }
 /* ---------------------------------- */
+
+.form-control{ /*Color blanco para el texto de la barra de búsqueda*/
+  color: #FFF;
+}
+
+.form-group.is-focused .form-control{ /*Color blanco para la animación inferior de la barra de búsqueda*/
+  /*background-image: linear-gradient(@input-success, @input-success), linear-gradient(@input-underline-color, @input-underline-color);*/
+  background-image: linear-gradient(#FFFFFF, #FFFFFF), linear-gradient(#FFFFFF, #FFFFFF);
+}
+
+#collapse{ /*poner la navbar-pills al mismo nivel que la navbar-brand*/
+  z-index: 0;
+}
+
+.nav-pills > li > a { /*quitar los bordes de las distintas categorías*/
+  border-radius: 0px;
+}
+
+#category{ /*fuente, tamaño y alineación de las categorías*/
+  font-family: 'Source Sans Pro' !important;
+  font-size: 20px;
+  text-align: center;
+}
+
+a{ /*color para las categorías: Animales, Bebés, Alcohol, etc.*/
+  color: #333;
+}
+
+.nav-pills a:hover, .nav-pills a:focus{
+  text-decoration: none;
+  color: #000000;
+  /*background-color: #E1E1E1;*/
+  /*z-index: 1;*/
+}
+
+.nav-pills > li:hover{
+  /*z-index: 0;*/
+  background-color: #E1E1E1;
+}
+
+/*.nav-pills > li > a{
+  z-index: 0;
+}*/
+
+/*.nav-pills > li{
+  z-index: 0;
+}*/
+
+/*queda por debajo del row-panels*/
+/*#collapse{
+  z-index: 0;
+}*/

@@ -234,3 +234,40 @@ a{ /*color para las categorías: Animales, Bebés, Alcohol, etc.*/
 /*#collapse{
   z-index: 0;
 }*/
+
+/* ----------off canvas-------------- */
+/* Checkbox Hack */
+
+.js-show-login[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+/* Default State */
+.container_signupbar {
+   background-color: #333;
+   top : 60px;
+   width: 100%;
+   height: 0px;
+   color: white;
+   text-align: center;
+   position: absolute;
+   transition: height 0.5s;
+   z-index: 100;
+}
+
+/* Toggled State */
+.container_signupbar-show  {
+   top : 60px;
+   width: 100%;
+   color: white;
+   text-align: center;
+   position: absolute;
+   /*background: -moz-linear-gradient(top,#333 0,#444 90%,#333 100%);*/
+   background-color: #333;
+   transition: height 1s;
+   height: 310px;
+   visibility: visible;
+   z-index: 100;
+}

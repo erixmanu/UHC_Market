@@ -1,9 +1,10 @@
-  <head>
+<head>
   <title>UHC MARKET</title>
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200normal,200italic,300normal,300italic,400normal,400italic,600normal,600italic,700normal,700italic,900normal,900italic|Open+Sans:400normal|Lato:400normal|Roboto:400normal|Gloria+Hallelujah:400normal|Oswald:400normal|Open+Sans+Condensed:300normal|Raleway:400normal|Montserrat:400normal|PT+Sans:400normal|Ubuntu:400normal&amp;subset=all" rel="stylesheet" type="text/css">
 </head>
 <body>
+  {{> signupbar}}
   {{> navbar}}
   <!-- {{> ipsum_lorem}} -->
   {{> list_title}}
@@ -11,6 +12,16 @@
   <!-- {{> aside}} -->
   <!-- {{> menu}} -->
 </body>
+
+<template name="signupbar">
+  <div class="js-container_signupbar container_signupbar">
+    <input-group>
+      <input type="text" name="" id="">
+      <input type="text" name="" id="">
+      <input type="text" name="" id="">
+    </input-group>
+  </div>
+</template>
 
 <template name="navbar">
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -28,8 +39,8 @@
       <div class="collapse navbar-collapse" id="navbar-collapsed">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Cart</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a class="js-show-login" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a class="js-show-login" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
         <div class="row">
           <div class="col-xs-12 col-sm-5 col-md-6 col-lg-7">

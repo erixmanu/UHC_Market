@@ -236,16 +236,9 @@ a{ /*color para las categorías: Animales, Bebés, Alcohol, etc.*/
 }*/
 
 /* ----------off canvas-------------- */
-/* Checkbox Hack */
-
-.js-show-login[type=checkbox] {
-   position: absolute;
-   top: -9999px;
-   left: -9999px;
-}
 
 /* Default State */
-.container_signupbar {
+.container_singupbar {
    background-color: #333;
    top : 60px;
    width: 100%;
@@ -258,7 +251,7 @@ a{ /*color para las categorías: Animales, Bebés, Alcohol, etc.*/
 }
 
 /* Toggled State */
-.container_signupbar-show  {
+.container_singupbar-show  {
    top : 60px;
    width: 100%;
    color: white;

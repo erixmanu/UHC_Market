@@ -237,6 +237,10 @@ a{ /*color para las categorías: Animales, Bebés, Alcohol, etc.*/
 
 /* ----------off canvas-------------- */
 
+/*inputs configurations*/
+.sign_input{
+  visibility: hidden;
+}
 /* Default State */
 .container_singupbar {
    background-color: #333;

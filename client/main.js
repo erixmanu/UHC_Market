@@ -1,3 +1,8 @@
+import { Meteor } from 'meteor/meteor';
+
+Meteor.subscribe('alcohol');
+
+// funcion para la transisicion de sign_upbar
 Template.navbar.events({
 	'click .js-show-login' : function(){
 		event.preventDefault();
@@ -11,5 +16,4 @@ Template.navbar.events({
       element.addClass('container_singupbar-show');
     }
 	}
-
 });

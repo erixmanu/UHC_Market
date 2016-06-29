@@ -20,8 +20,10 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 insecure                # Allow all DB writes from clients (for prototyping)
 accounts-ui
 accounts-password
-twbs:bootstrap
 fezvrasta:bootstrap-material-design
-natestrauser:font-awesome
 kadira:flow-router
 kadira:blaze-layout
+natestrauser:font-awesome
+cfs:standard-packages
+meteortoys:allthings
+cfs:gridfs

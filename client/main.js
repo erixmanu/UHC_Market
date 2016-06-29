@@ -2,8 +2,6 @@ import { Template } from 'meteor/templating';
 import { ReactiVar } from 'meteor/reactive-var';
 import { meteor } from 'meteor/meteor';
 
-Meteor.subscribe('alcohol');
-
 Template.navbar.events({
 	'click .js-show-login' : function(){
 		event.preventDefault();

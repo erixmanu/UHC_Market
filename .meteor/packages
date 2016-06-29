@@ -24,3 +24,6 @@ fezvrasta:bootstrap-material-design
 kadira:flow-router
 kadira:blaze-layout
 natestrauser:font-awesome
+cfs:standard-packages
+meteortoys:allthings
+cfs:gridfs

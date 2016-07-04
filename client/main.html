@@ -4,10 +4,338 @@
   <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200normal,200italic,300normal,300italic,400normal,400italic,600normal,600italic,700normal,700italic,900normal,900italic|Open+Sans:400normal|Lato:400normal|Roboto:400normal|Gloria+Hallelujah:400normal|Oswald:400normal|Open+Sans+Condensed:300normal|Raleway:400normal|Montserrat:400normal|PT+Sans:400normal|Ubuntu:400normal&amp;subset=all" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <!-- {{> singUpBar}} -->
+  <!-- {{> singupbar}} -->
   <!-- {{> navbar}} -->
+  <!-- {{> ipsum_lorem}} -->
   <!-- {{> list_title}} -->
   <!-- {{> aside}} -->
   <!-- {{> panels}} -->
   <!-- {{> menu}} -->
 </body>
+
+<template name="singupbar">
+  <div class="js-container_singupbar container_singupbar">
+    <input-group class= 'sign_input'>
+      <input type="text" name="" id="">
+      <input type="text" name="" id="">
+      <input type="text" name="" id="">
+    </input-group>
+  </div>
+</template>
+
+<template name="navbar">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid" id="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsed">
+    			<span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">UHC Market</a>
+        <!-- <div class='navbar-brand'>UHC Market</div> -->
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapsed">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Cart</a></li>
+          <li><a class="js-show-login" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a class="js-show-login" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+        <div class="row">
+          <div class="col-xs-12 col-sm-5 col-md-6 col-lg-7">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search a item...">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-primary" id="search_button">
+                  <i class="fa fa-search fa-fw"></i>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <ul class="nav navbar-nav visible-xs" style="padding-top:50px">
+            <h4 id="category">Categorías</h4>
+            <li><a href="/animales">Animales</a></li>
+    				<li><a href="/bebes">Bebés</a></li>
+    				<li><a href="/alcohol">Alcohol</a></li>
+    				<li><a href="/mariscos">Mariscos</a></li>
+    				<li><a href="/farmacia">Farmacia</a></li>
+    				<li><a href="/hogar">Hogar</a></li>
+    				<li><a href="/panaderia">Panadería</a></li>
+    				<li><a href="/frutas">Frutas</a></li>
+    				<li><a href="/verduras">Verduras</a></li>
+    				<li><a href="/bebidas">Bebidas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div class="collapse navbar-collapse" id="collapse"> -->
+    <!-- <ul class="nav navbar-nav visible-xs"> -->
+    <!-- <ul class="nav navbar-nav visible-xs" style="padding-top:50px">
+      <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Cart</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <h4>Works</h4>
+      <li><a href="gallery1.html">project 01</a></li>
+      <li><a href="gallery2.html">project 02</a></li>
+      <li><a href="gallery3.html">project 03</a></li>
+      <li><a href="cv.html">About</a></li>
+      <li><a href="#" target="_blank">link</a></li>
+      <li><a href="mailto:info@you.com">Contact</a></li>
+    </ul>
+  </div> -->
+
+  <div class="container-fluid"><!--content area-->
+	  <div class="row">
+  		<aside class="col-lg-2 col-md-2 col-sm-2"><!--aside-->
+        <!-- <div class="collapse navbar-collapse" id="collapse"> -->
+  		  <div class="collapse navbar-collapse navbar-fixed-top" id="collapse" style="padding-top:70px;padding-left:0px;padding-right:0px;width:125px;">
+    			<ul class="nav nav-pills nav-stacked hidden-xs">
+    			  <h4 id="category">Categorías</h4>
+    				<li><a id="cat_1" href="/animales">Animales</a></li>
+    				<li><a id="cat_2" href="/bebes">Bebés</a></li>
+    				<li><a id="cat_3" href="/alcohol">Alcohol</a></li>
+    				<li><a id="cat_4" href="/mariscos">Mariscos</a></li>
+    				<li><a id="cat_5" href="/farmacia">Farmacia</a></li>
+    				<li><a id="cat_6" href="/hogar">Hogar</a></li>
+    				<li><a id="cat_7" href="/panaderia">Panadería</a></li>
+    				<li><a id="cat_8" href="/frutas">Frutas</a></li>
+    				<li><a id="cat_9" href="/verduras">Verduras</a></li>
+    				<li><a id="cat_10" href="/bebidas">Bebidas</a></li>
+    			</ul>
+  		  </div>
+  		</aside><!--aside-->
+      <section class="col-lg-10 col-md-10 col-sm-10" style="padding-left:0px;padding-right:0px">
+        <!-- {{> ipsum_lorem}} -->
+      </section>
+	  </div>
+	</div>
+
+  <!-- Para el menú anterior, no es nuevo -->
+  <!-- {{>menu}} -->
+</template>
+
+<template name="ipsum_lorem">
+  <div class="container-fluid">
+    <article class="markdown-body entry-content" itemprop="text">
+      <h2>Ipsum Lorem</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a justo faucibus, finibus velit id, consequat dolor. Mauris quis tortor nibh. Donec nisi metus, tempor vel nisl sit amet, pretium tristique lorem. Cras ligula lectus, luctus non orci sollicitudin, ultrices bibendum neque. Curabitur malesuada, dui eu mollis tincidunt, libero nulla elementum lectus, luctus sagittis ante lacus eget massa. Vivamus congue dapibus semper. Quisque vitae sodales sem, at pulvinar felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin in nibh a sapien condimentum ultricies sed a est.</p>
+      <p>Nam at imperdiet sapien, vitae interdum augue. Nunc in accumsan mauris, a elementum felis. Cras eget auctor dui. Cras at ipsum id sem euismod pharetra. Nam lobortis quam dolor, sed accumsan lorem elementum eget. Nullam commodo leo nec nibh ultricies, sed vehicula arcu consequat. Vivamus nec condimentum nisi. Nunc non felis accumsan, fermentum quam nec, mattis metus. Morbi fermentum orci tempor nisl eleifend condimentum. Nunc maximus sem et convallis commodo.</p>
+      <p>Sed sed est quis turpis finibus fringilla ac consequat dolor. Praesent dapibus tincidunt diam, quis sagittis nulla placerat faucibus. In cursus facilisis erat in dictum. Ut vel dolor vitae felis gravida faucibus. Suspendisse justo nisi, porttitor posuere laoreet quis, pulvinar volutpat massa. Maecenas sit amet risus in lacus feugiat finibus vel a sapien. Proin eget placerat orci. Nam ut eros non ipsum commodo scelerisque nec non arcu. Maecenas et dui nec nibh faucibus tristique. Donec consectetur nisl at magna ullamcorper fermentum. Morbi sit amet lobortis libero. Aenean eu sollicitudin metus. Curabitur tristique pulvinar sapien ac rutrum. Nulla tristique faucibus consectetur. Vestibulum rhoncus orci sit amet elit placerat rutrum.</p>
+      <p>Suspendisse posuere, urna ac hendrerit dignissim, dolor nisl posuere quam, in commodo massa magna non massa. Nunc eget risus quis quam fermentum hendrerit. Phasellus sem arcu, vulputate a mauris id, aliquam ultricies dui. Donec laoreet dui non orci posuere congue. Nullam facilisis tempus pellentesque. Praesent quis nisi ullamcorper metus vehicula pretium a placerat dolor. Praesent pharetra purus a enim hendrerit, vitae maximus felis tempus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Praesent efficitur, urna sed hendrerit dapibus, erat lorem laoreet sapien, vel blandit ex ligula eu nibh. Aenean vitae dictum lectus. Curabitur dignissim vitae est non sagittis. Integer a libero lacus. Nunc viverra erat elit, id pretium velit convallis quis.</p>
+      <p>Vivamus venenatis arcu eget risus mattis dictum. Morbi ornare iaculis magna id ornare. Phasellus pretium rhoncus nisi vel hendrerit. Ut vitae ligula a orci pharetra aliquam. Morbi accumsan, felis sit amet mattis porta, justo sem luctus urna, sed sollicitudin elit augue vel sapien. Donec nibh nulla, maximus vel varius quis, consequat at velit. Suspendisse sit amet auctor dolor. Aenean convallis risus enim, non vehicula urna imperdiet ac.</p>
+      <p>Sed tempus dignissim ultrices. Sed consectetur, mauris eget congue dapibus, mauris tellus congue sapien, eget vulputate nisl nibh non erat. Suspendisse vehicula ex dictum mattis ultricies. Suspendisse potenti. Morbi dapibus, nunc id suscipit viverra, diam turpis tincidunt libero, quis euismod nibh turpis at metus. Vestibulum in aliquet nulla, ac tincidunt est. Praesent et sollicitudin lacus, et dapibus neque.</p>
+      <p>Morbi vulputate odio eu suscipit laoreet. Morbi non sapien augue. Nulla auctor lorem mollis sapien cursus efficitur. Phasellus vulputate congue dictum. Donec pellentesque tellus lectus, sit amet porta ipsum hendrerit eget. Quisque elementum elit vitae accumsan commodo. Aenean eu risus auctor, efficitur dolor interdum, scelerisque odio. Suspendisse iaculis diam vitae erat tincidunt, sit amet lacinia libero tincidunt. Nam rutrum metus nibh, vel rhoncus massa pretium vel. Aliquam in odio non dui iaculis volutpat. Fusce eget luctus nunc. Etiam ac tellus ipsum. Morbi vitae pellentesque justo, sit amet consectetur purus. Sed tincidunt sapien odio, at dapibus erat sagittis sit amet. Nulla sit amet aliquam ex. Sed ultrices turpis vitae consequat egestas.</p>
+      <p>Aliquam erat volutpat. Vestibulum dui arcu, pulvinar id varius commodo, tristique sit amet quam. Praesent blandit ipsum a est fermentum, a lacinia nunc hendrerit. Praesent pretium nec purus sit amet elementum. Sed nec tellus molestie, facilisis velit eget, suscipit tortor. Maecenas vitae velit mollis, condimentum nulla sed, venenatis erat. Sed in est sed elit placerat tempor. Duis ante justo, convallis eget tristique nec, ornare quis purus.</p>
+      <p>Cras in risus vestibulum, faucibus est a, aliquam magna. Proin tellus velit, tincidunt at leo nec, facilisis gravida sapien. Mauris lacinia sed libero nec gravida. Praesent sodales orci accumsan, consequat purus a, finibus augue. Nunc aliquam nunc lorem, nec iaculis felis elementum sed. Sed sagittis nibh eu venenatis molestie. Proin aliquet ipsum leo, quis bibendum felis sagittis ut. Sed scelerisque consectetur nibh id dapibus. Curabitur sem tellus, porttitor id diam et, rhoncus viverra urna.</p>
+      <p>Sed cursus et neque ac commodo. Ut bibendum non diam a egestas. Nullam eget facilisis nisl. Pellentesque at turpis feugiat, ullamcorper libero at, tincidunt mi. Integer velit est, fringilla vel molestie eget, hendrerit vitae magna. Curabitur porta sodales felis sed venenatis. Aenean eros ante, eleifend ac faucibus quis, dictum a enim. Aliquam pharetra eget felis et consequat. Maecenas sit amet pellentesque neque, vitae porttitor erat. Cras luctus justo eu metus dignissim, in ullamcorper justo iaculis. Vestibulum eros enim, ullamcorper vel nulla sed, pulvinar feugiat nunc. Donec turpis leo, efficitur a quam eget, sollicitudin malesuada lectus. Curabitur libero massa, dignissim tincidunt eros ut, vestibulum placerat nisl.</p>
+      <p>Nam venenatis eleifend finibus. In ut orci eu magna luctus auctor. Vestibulum vehicula placerat eros, eget vestibulum augue vestibulum vel. Nam egestas orci libero, sed efficitur dui ultrices at. Curabitur sed lorem at nisi suscipit aliquet. Sed id nisl elit. Praesent pellentesque porttitor enim quis mattis. Etiam pharetra finibus libero vulputate vulputate. Mauris pellentesque ac turpis sit amet congue. Pellentesque volutpat tincidunt condimentum. Phasellus vel tellus molestie, scelerisque nibh in, efficitur ex. Duis sit amet augue sed magna mollis semper.</p>
+      <p>Nunc suscipit convallis enim nec tempus. Sed nec malesuada nulla. Mauris ac lobortis risus, nec ornare augue. Nulla imperdiet lorem tempor ornare rutrum. Praesent auctor luctus turpis, a viverra ex. Ut vitae viverra ligula. Donec a tortor metus. Sed ullamcorper velit sed tempor congue. In mattis eros nec convallis maximus. Aliquam viverra sapien vitae lectus vestibulum malesuada. Fusce auctor felis in lacus scelerisque maximus. Donec euismod, metus sed mattis lacinia, nulla elit commodo augue, sit amet tincidunt elit nibh in purus. Quisque ac mollis nibh. In hac habitasse platea dictumst. Maecenas vehicula sapien et urna condimentum, malesuada elementum ante porta. Nulla malesuada rutrum fermentum.</p>
+    </article>
+  </div>
+</template>
+
+<template name="list_title">
+  <h3 class="shelfHeader">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- <div class="col-xs-12 col-sm-10 col-md10 col-lg-11" id="col_title"> -->
+        <div class="col-xs-12 col-sm-10 col-md10 col-lg-11" id="col_title">
+          <a class="stylesample Source-Sans-Pro-normal-200" id="title" href="/bakery/cakes-sweet-pies">Cakes & Sweet Pies</a>
+        </div>
+        <!-- <div class="col-xs-12 col-sm-2 col-md2 col-lg-1" id="col_seeall"> -->
+        <div class="col-xs-12 col-sm-2 col-md2 col-lg-1" id="col_seeall">
+          <a class="stylesample Source-Sans-Pro-normal-200" id="seeall" href="/bakery/all_products">See All
+            <i class="fa fa-arrow-circle-right fa-fw"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </h3>
+</template>
+
+<template name="panels">
+  <div class="container-fluid" id="container_products">
+    <div class="panel-group">
+      <div class="row" id="row_products" style="margin-left:115px;">
+        {{> on_sale_article}}
+        {{> on_sale_article}}
+        {{> on_sale_article}}
+        {{> on_sale_article}}
+        {{> on_sale_article}}
+        {{> on_sale_article}}
+        {{> on_sale_article}}
+        {{> on_sale_article}}
+        {{> on_sale_article}}
+        {{> on_sale_article}}
+        {{> on_sale_article}}
+        {{> on_sale_article}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="on_sale_article">
+  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+    <div class="panel panel-default">
+      <!-- Panel Heading -->
+      <div class="panel-heading" id="product_image">
+        <div class="jumbotron jumbotron-icon">
+          <div class="container" id="icon-container">
+            <div class="info-icons">
+              <i class="fa fa-plus-circle fa-6" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body" id="product_description">
+        <!-- Panel Body -->
+        <div class="description">Description
+        </div>
+        <div class="price">Price
+        </div>
+      </div>
+      <div class="panel-footer">
+        <!-- Panel Footer -->
+        <button type="button" class="btn btn-primary" id="add_cart">
+          <i class="fa fa-shopping-cart fa-fw fa-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="aside">
+  <div class="aside" style="float:left">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8">
+
+        </div>
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsed">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="category dropdown" data-keywords="Productos Frescos">
+          <a href="/productos-frescos">Productos Frescos</a>
+          <div class="layer">
+            <div class="title icon productos-frescos">
+              <a href="productos-frescos"></a>
+            </div>
+            <ul>
+              <li>
+                <a class="subcategory" href="/productos-frescos/vegetales-frescos"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="menu">
+  <nav class="navbar navbar-inverse sidebar navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Menú</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+          <li ><a href="#">Profile<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+          <li ><a href="#">Messages<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
+            <ul class="dropdown-menu forAnimate" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+          <li ><a href="#">Profile<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+          <li ><a href="#">Messages<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
+            <ul class="dropdown-menu forAnimate" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</template>
+
+<template name="original_menu">
+  <nav class="navbar navbar-inverse sidebar" role="navigation">
+    <div class="container-fluid">
+    	<!-- Brand and toggle get grouped for better mobile display -->
+    	<div class="navbar-header">
+    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+    			<span class="sr-only">Toggle navigation</span>
+    			<span class="icon-bar"></span>
+    			<span class="icon-bar"></span>
+    			<span class="icon-bar"></span>
+    		</button>
+    		<a class="navbar-brand" href="#">Brand</a>
+    	</div>
+    	<!-- Collect the nav links, forms, and other content for toggling -->
+    	<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+    		<ul class="nav navbar-nav">
+    			<li class="active"><a href="#">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+    			<li ><a href="#">Profile<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+    			<li ><a href="#">Messages<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+    			<li class="dropdown">
+    				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
+    				<ul class="dropdown-menu forAnimate" role="menu">
+    					<li><a href="#">Action</a></li>
+    					<li><a href="#">Another action</a></li>
+    					<li><a href="#">Something else here</a></li>
+    					<li class="divider"></li>
+    					<li><a href="#">Separated link</a></li>
+    					<li class="divider"></li>
+    					<li><a href="#">One more separated link</a></li>
+    				</ul>
+    			</li>
+    			<li><a href="#">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+    			<li ><a href="#">Profile<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+    			<li ><a href="#">Messages<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+    			<li class="dropdown">
+    				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
+    				<ul class="dropdown-menu forAnimate" role="menu">
+    					<li><a href="#">Action</a></li>
+    					<li><a href="#">Another action</a></li>
+    					<li><a href="#">Something else here</a></li>
+    					<li class="divider"></li>
+    					<li><a href="#">Separated link</a></li>
+    					<li class="divider"></li>
+    					<li><a href="#">One more separated link</a></li>
+    				</ul>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+  </nav>
+</template>

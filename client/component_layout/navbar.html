@@ -1,0 +1,73 @@
+<template name="navbar">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid" id="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsed">
+    			<span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">UHC Market</a>
+        <!-- <div class='navbar-brand'>UHC Market</div> -->
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapsed">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Cart</a></li>
+          <li><a class="js-show-login" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a class="js-show-login" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+        <div class="row">
+          <div class="col-xs-12 col-sm-5 col-md-6 col-lg-7">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search a item...">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-primary" id="search_button">
+                  <i class="fa fa-search fa-fw"></i>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <ul class="nav navbar-nav visible-xs" style="padding-top:50px">
+            <h4 id="category">Categorías</h4>
+            <li><a href="/animales">Animales</a></li>
+    				<li><a href="/bebes">Bebés</a></li>
+    				<li><a href="/alcohol">Alcohol</a></li>
+    				<li><a href="/mariscos">Mariscos</a></li>
+    				<li><a href="/farmacia">Farmacia</a></li>
+    				<li><a href="/hogar">Hogar</a></li>
+    				<li><a href="/panaderia">Panadería</a></li>
+    				<li><a href="/frutas">Frutas</a></li>
+    				<li><a href="/verduras">Verduras</a></li>
+    				<li><a href="/bebidas">Bebidas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid"><!--content area-->
+	  <div class="row">
+  		<aside class="col-lg-2 col-md-2 col-sm-2"><!--aside-->
+        <!-- <div class="collapse navbar-collapse" id="collapse"> -->
+  		  <div class="collapse navbar-collapse navbar-fixed-top" id="collapse" style="padding-top:70px;padding-left:0px;padding-right:0px;width:125px;">
+    			<ul class="nav nav-pills nav-stacked hidden-xs">
+    			  <h4 id="category">Categorías</h4>
+    				<li><a id="cat_1" href="/animales">Animales</a></li>
+    				<li><a id="cat_2" href="/bebes">Bebés</a></li>
+    				<li><a id="cat_3" href="/alcohol">Alcohol</a></li>
+    				<li><a id="cat_4" href="/mariscos">Mariscos</a></li>
+    				<li><a id="cat_5" href="/farmacia">Farmacia</a></li>
+    				<li><a id="cat_6" href="/hogar">Hogar</a></li>
+    				<li><a id="cat_7" href="/panaderia">Panadería</a></li>
+    				<li><a id="cat_8" href="/frutas">Frutas</a></li>
+    				<li><a id="cat_9" href="/verduras">Verduras</a></li>
+    				<li><a id="cat_10" href="/bebidas">Bebidas</a></li>
+    			</ul>
+  		  </div>
+  		</aside><!--aside-->
+      <section class="col-lg-10 col-md-10 col-sm-10" style="padding-left:0px;padding-right:0px">
+        <!-- {{> ipsum_lorem}} //aquí se renderizan los templates -->
+      </section>
+	  </div>
+	</div>
+</template>

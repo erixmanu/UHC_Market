@@ -59,10 +59,10 @@ li:hover, div.navbar-header:hover{
 }
 
 .col-xs-6, .col-sm-4, .col-md-3, .col-lg-2{ /*panels (template > on_sale_article)*/
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 10px;
+  padding-bottom: 0px;
 }
 
 .panel-default > .panel-heading {
@@ -92,11 +92,13 @@ li:hover, div.navbar-header:hover{
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
-  height: 200px;
+  height: 140px;
 }
 
 #product_description{
-
+font-size: 12px;
+text-align: center;
+height: 70px;
 }
 
 #add_cart{
@@ -159,7 +161,7 @@ li:hover, div.navbar-header:hover{
 /* ------------JUMBOTRON------------ */
 /* ---------------------------------- */
 .jumbotron-icon .fa-6 {
-  font-size: 12em;
+  font-size: 8em;
 }
 
 div.jumbotron.jumbotron-icon{
@@ -168,7 +170,7 @@ div.jumbotron.jumbotron-icon{
   padding-right: 0px;
   padding-bottom: 15px;
   margin-bottom: 0px;
-  height: 200px;
+  height: 139px;
   text-align: center;
   box-shadow: 0px 0px 0px;
 }
@@ -269,8 +271,6 @@ a{ /*color para las categorías: Animales, Bebés, Alcohol, etc.*/
    z-index: 100;
 }
 /* ----------Margen de los template Dinamicos-------------- */
-
-.margin{
-  padding-left:auto;
-  padding-right:auto;
-}
+/*.container-fluid{
+  padding-left: 130px;
+}*/

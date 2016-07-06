@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 
-console.log(Alcohol.find().fetch());
+console.log(Bakery.find().fetch());
 
 Meteor.startup(() => {
 

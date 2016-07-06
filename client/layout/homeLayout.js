@@ -1,6 +1,5 @@
 //subscribe
 Meteor.subscribe('images');
-
 //Upload Image
 Template.HomeLayout.events({
 'change #uploadsImage': function(event, template){

@@ -242,7 +242,7 @@ a{ /*color para las categorías: Animales, Bebés, Alcohol, etc.*/
   visibility: hidden;
 }
 /* Default State */
-.container_singupbar {
+.container_signupbar {
    background-color: #333;
    top : 60px;
    width: 100%;
@@ -255,7 +255,7 @@ a{ /*color para las categorías: Animales, Bebés, Alcohol, etc.*/
 }
 
 /* Toggled State */
-.container_singupbar-show  {
+.container_signupbar-show  {
    top : 60px;
    width: 100%;
    color: white;
@@ -267,4 +267,10 @@ a{ /*color para las categorías: Animales, Bebés, Alcohol, etc.*/
    height: 310px;
    visibility: visible;
    z-index: 100;
+}
+/* ----------Margen de los template Dinamicos-------------- */
+
+.margin{
+  padding-left:auto;
+  padding-right:auto;
 }

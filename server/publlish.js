@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 //publis data base alcohol
-Meteor.publish('alcohol', function alcoholPublication() {
+Meteor.publish('alcohol', function() {
   return Alcohol.find();
 });
 //publis data base animals
@@ -15,10 +15,27 @@ Meteor.publish('babies', function babiesPublication() {
 Meteor.publish('beverages', function beveragesPublication() {
   return Alcohol.find();
 });
-//publis data base fruits
-Meteor.publish('fruits', function fruitslPublication() {
-  return Alcohol.find();
+//publis data base fruits_vegetables
+Meteor.publish('fruits_vegetables', function(){
+  return Fruits_Vegetables.find();
 });
+
+Meteor.publish('frozen', function(){
+  return Frozen.find();
+});
+
+Meteor.publish('bakery', function(){
+  return Bakery.find();
+});
+
+Meteor.publish('household', function(){
+  return Household.find();
+});
+
+Meteor.publish('food_cupboard', function(){
+  return Food_Cupboard.find();
+});
+
 //publis data base home
 Meteor.publish('home', function homePublication() {
   return Alcohol.find();
@@ -27,9 +44,9 @@ Meteor.publish('home', function homePublication() {
 Meteor.publish('pharmacy', function pharmacyPublication() {
   return Alcohol.find();
 });
-//publis data base seafood
-Meteor.publish('seafood', function seafoodPublication() {
-  return Alcohol.find();
+//publis data base meat_seafood
+Meteor.publish('meat_seafood', function(){
+  return Meat_Seafood.find();
 });
 //publis data base vegetables
 Meteor.publish('vegetables', function vegetablesPublication() {

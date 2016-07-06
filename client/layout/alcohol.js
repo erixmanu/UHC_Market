@@ -1,8 +1,9 @@
+import { meteor } from 'meteor/meteor';
 //subscribe
 Meteor.subscribe('alcohol');
 
-Template.alcoholLayout.helpers({
+Template.alcohoLayout.helpers({
   alcohol: ()=>{
-    return Alcohol.find({});
+    return Alcohol.find();
   }
 });

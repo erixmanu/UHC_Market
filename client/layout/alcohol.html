@@ -1,9 +1,37 @@
-<template name="alcoholLayout">
-  {{#each alcohol}}
-  <ul>
-    <li>Licor: {{name}} </li>
-    <li>Descripcion{{description}}</li>
-    <li>precio: {{price}}</li>
-  </ul>
-  {{/each}}
+<template name="alcohoLayout">
+  <section class="col-lg-10 col-md-10">
+
+
+    {{#each alcohol}}
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="panel panel-default">
+            <!-- Panel Heading -->
+            <div class="panel-heading" id="product_image">
+                <div class="jumbotron jumbotron-icon">
+                    <div class="container" id="icon-container">
+                        <div class="info-icons">
+                            <i class="fa fa-plus-circle fa-6" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body" id="product_description">
+                <!-- Panel Body -->
+                <div class="name">{{name}}
+                </div>
+                <div class="description">{{description}}
+                </div>
+                <div class="price">{{price}}
+                </div>
+            </div>
+            <div class="panel-footer">
+                <!-- Panel Footer -->
+                <button type="button" class="btn btn-primary" id="add_cart">
+                    <i class="fa fa-shopping-cart fa-fw fa-lg"></i>Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+      </section>
 </template>

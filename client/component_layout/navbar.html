@@ -1,3 +1,8 @@
+<head>
+  <title>UHC MARKET</title>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200normal,200italic,300normal,300italic,400normal,400italic,600normal,600italic,700normal,700italic,900normal,900italic|Open+Sans:400normal|Lato:400normal|Roboto:400normal|Gloria+Hallelujah:400normal|Oswald:400normal|Open+Sans+Condensed:300normal|Raleway:400normal|Montserrat:400normal|PT+Sans:400normal|Ubuntu:400normal&amp;subset=all" rel="stylesheet" type="text/css">
+</head>
 <template name="navbar">
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid" id="container-fluid">
@@ -29,45 +34,64 @@
             </div>
           </div>
         </div>
-        <ul class="nav navbar-nav visible-xs" style="padding-top:50px">
-            <h4 id="category">Categorías</h4>
-            <li><a href="/animales">Animales</a></li>
-    				<li><a href="/bebes">Bebés</a></li>
-    				<li><a href="/alcohol">Alcohol</a></li>
-    				<li><a href="/mariscos">Mariscos</a></li>
-    				<li><a href="/farmacia">Farmacia</a></li>
-    				<li><a href="/hogar">Hogar</a></li>
-    				<li><a href="/panaderia">Panadería</a></li>
-    				<li><a href="/frutas">Frutas</a></li>
-    				<li><a href="/verduras">Verduras</a></li>
-    				<li><a href="/bebidas">Bebidas</a></li>
+        <ul class="nav navbar-nav visible-xs">
+          <h4 id="category">Categorías</h4>
+          <li><a href="/animales">Animales</a></li>
+          <li><a href="/bebes">Bebés</a></li>
+          <li><a href="/bebidas-alcoholicas">Bebidas Alcohólicas</a></li>
+          <li><a href="/carnes-mariscos">Carnes y Mariscos</a></li>
+          <li><a href="/comida-alacena">Comida de Alacena</a></li>
+          <li><a href="/frutas-vegetales">Frutas y Vegetales</a></li>
+          <li><a href="/helados">Helados</a></li>
+          <li><a href="/hogar">Hogar</a></li>
+          <li><a href="/panaderia">Panadería</a></li>
+          <li><a href="/refrescos">Refrescos</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!-- <div class="collapse navbar-collapse" id="collapse"> -->
+    <!-- <ul class="nav navbar-nav visible-xs"> -->
+    <!-- <ul class="nav navbar-nav visible-xs" style="padding-top:50px">
+      <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Cart</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <h4>Works</h4>
+      <li><a href="gallery1.html">project 01</a></li>
+      <li><a href="gallery2.html">project 02</a></li>
+      <li><a href="gallery3.html">project 03</a></li>
+      <li><a href="cv.html">About</a></li>
+      <li><a href="#" target="_blank">link</a></li>
+      <li><a href="mailto:info@you.com">Contact</a></li>
+    </ul>
+  </div> -->
+
   <div class="container-fluid"><!--content area-->
 	  <div class="row">
   		<aside class="col-lg-2 col-md-2 col-sm-2"><!--aside-->
         <!-- <div class="collapse navbar-collapse" id="collapse"> -->
-  		  <div class="collapse navbar-collapse navbar-fixed-top" id="collapse" style="padding-top:70px;padding-left:0px;padding-right:0px;width:125px;">
+  		  <div class="collapse navbar-collapse navbar-fixed-top" id="collapse" style="padding-top:60px;padding-left:0px;padding-right:0px;width:125px;">
     			<ul class="nav nav-pills nav-stacked hidden-xs">
     			  <h4 id="category">Categorías</h4>
     				<li><a id="cat_1" href="/animales">Animales</a></li>
     				<li><a id="cat_2" href="/bebes">Bebés</a></li>
-    				<li><a id="cat_3" href="/alcohol">Alcohol</a></li>
-    				<li><a id="cat_4" href="/mariscos">Mariscos</a></li>
-    				<li><a id="cat_5" href="/farmacia">Farmacia</a></li>
-    				<li><a id="cat_6" href="/hogar">Hogar</a></li>
-    				<li><a id="cat_7" href="/panaderia">Panadería</a></li>
-    				<li><a id="cat_8" href="/frutas">Frutas</a></li>
-    				<li><a id="cat_9" href="/verduras">Verduras</a></li>
-    				<li><a id="cat_10" href="/bebidas">Bebidas</a></li>
+    				<li><a id="cat_3" href="/bebidas-alcoholicas">Bebidas Alcohólicas</a></li>
+    				<li><a id="cat_4" href="/carnes-mariscos">Carnes y Mariscos</a></li>
+    				<li><a id="cat_5" href="/comida-alacena">Comida de Alacena</a></li>
+            <li><a id="cat_6" href="/frutas-vegetales">Frutas y Vegetales</a></li>
+            <li><a id="cat_7" href="/helados">Helados</a></li>
+    				<li><a id="cat_8" href="/hogar">Hogar</a></li>
+    				<li><a id="cat_9" href="/panaderia">Panadería</a></li>
+    				<li><a id="cat_10" href="/refrescos">Refrescos</a></li>
     			</ul>
   		  </div>
   		</aside><!--aside-->
       <section class="col-lg-10 col-md-10 col-sm-10" style="padding-left:0px;padding-right:0px">
-        <!-- {{> ipsum_lorem}} //aquí se renderizan los templates -->
+        <!-- {{> ipsum_lorem}} -->
       </section>
 	  </div>
 	</div>
+  <!-- Para el menú anterior, no es nuevo -->
+  <!-- {{>menu}} -->
 </template>

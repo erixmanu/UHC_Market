@@ -1,8 +1,7 @@
 import { Template } from 'meteor/templating';
 import { ReactiVar } from 'meteor/reactive-var';
 import { meteor } from 'meteor/meteor';
-import '/client/stylesheet/main.css';
-import 'path/to/font-awesome/css/font-awesome.min.css'
+
 
 Template.navbar.events({
 	'click .js-show-login' : function(){

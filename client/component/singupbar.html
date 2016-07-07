@@ -5,5 +5,20 @@
       <input type="text" name="" id="">
       <input type="text" name="" id="">
     </input-group>
+
+    {{#if currentUser}}
+   {{> settings}}
+ {{else}}
+
+    <div id="container_register" style='display:none;'>
+
+  {{>signup}}
+
+    </div>
+    <div id="container_login" style='display:none;'>
+ {{>login}}
   </div>
+   {{/if}}
+</div>
+
 </template>

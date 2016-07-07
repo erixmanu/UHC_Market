@@ -1,7 +1,187 @@
-<template name="HomeLayout">
+<template name="homeLayout">
     <!-- <h2>this his home page</h2>
     <input type="file" id="uploadsImage">
     {{#each images}}
     <img src="{{this.url}}">
     {{/each}} -->
+    <div class="container-fluid hidden-xs" id="right_container_hidden_xs">
+        {{>categories}}
+    </div>
+    <div class="container-fluid visible-xs" id="right_container_visible_xs">
+        {{>categories}}
+    </div>
+</template>
+
+<template name="categories">
+    <div id="left_margin">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4" id="promo_001">
+            <a href="/frutas-vegetales" style="text-decoration:none;">
+                <div class="panel panel-default">
+                    <!-- Panel Heading -->
+                    <div class="panel-heading" id="offer_image_1">
+                        <img class="img-responsive" src="/243_small_banner-freshproduce.png" alt="Promo1">
+                    </div>
+                    <div class="panel-footer">
+                        <!-- Panel Footer -->
+                        <div class="promo-footer">
+                            Frutas y Vegetales
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4" id="promo_002">
+            <a href="/carnes-mariscos" style="text-decoration:none;">
+                <div class="panel panel-default">
+                    <!-- Panel Heading -->
+                    <div class="panel-heading text-center" id="offer_image_2">
+                        <img class="img-responsive" src="/266_small_banner-meat-seafood.png" alt="Promo2">
+                    </div>
+                    <div class="panel-footer">
+                        <!-- Panel Footer -->
+                        <div class="promo-footer">
+                            Carnes y Mariscos
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4" id="promo_003">
+            <a href="/hogar" style="text-decoration:none;">
+                <div class="panel panel-default">
+                    <!-- Panel Heading -->
+                    <div class="panel-heading text-center" id="offer_image_3">
+                        <img class="img-responsive" src="/6_small_banner-household.png" alt="Promo3">
+                    </div>
+                    <div class="panel-footer">
+                        <!-- Panel Footer -->
+                        <div class="promo-footer">
+                            Hogar
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="promo_004">
+            <a href="/bebidas" style="text-decoration:none;">
+                <div class="panel panel-default">
+                    <!-- Panel Heading -->
+                    <div class="panel-heading text-center" id="offer_image_4">
+                        <img class="img-responsive" src="/2_small_banner-beverages.png" alt="Promo4">
+                    </div>
+                    <div class="panel-footer">
+                        <!-- Panel Footer -->
+                        <div class="promo-footer">
+                            Bebidas
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="promo_005">
+            <a href="/helados" style="text-decoration:none;">
+                <div class="panel panel-default">
+                    <!-- Panel Heading -->
+                    <div class="panel-heading text-center" id="offer_image_5">
+                        <img class="img-responsive" src="/249_small_banner-frozen.png" alt="Promo5">
+                    </div>
+                    <div class="panel-footer">
+                        <!-- Panel Footer -->
+                        <div class="promo-footer">
+                            Helados
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4" id="promo_006">
+            <a href="/panaderia" style="text-decoration:none;">
+                <div class="panel panel-default">
+                    <!-- Panel Heading -->
+                    <div class="panel-heading text-center" id="offer_image_6">
+                        <img class="img-responsive" src="/212_small_banner-bakery.png" alt="Promo6">
+                    </div>
+                    <div class="panel-footer">
+                        <!-- Panel Footer -->
+                        <div class="promo-footer">
+                            Panadería
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4" id="promo_007">
+            <a href="/bebes" style="text-decoration:none;">
+                <div class="panel panel-default">
+                    <!-- Panel Heading -->
+                    <div class="panel-heading text-center" id="offer_image_7">
+                        <img class="img-responsive" src="/4_small_banner-baby.png" alt="Promo5">
+                    </div>
+                    <div class="panel-footer">
+                        <!-- Panel Footer -->
+                        <div class="promo-footer">
+                            Bebés
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4" id="promo_008">
+            <a href="/bebidas-alcoholicas" style="text-decoration:none;">
+                <div class="panel panel-default">
+                    <!-- Panel Heading -->
+                    <div class="panel-heading text-center" id="offer_image_8">
+                        <img class="img-responsive" src="/3_small_banner-alcohol.png" alt="Promo6">
+                    </div>
+                    <div class="panel-footer">
+                        <!-- Panel Footer -->
+                        <div class="promo-footer">
+                            Bebidas Alcohólicas
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="promo_009">
+            <a href="/comida-alacena" style="text-decoration:none;">
+                <div class="panel panel-default">
+                    <!-- Panel Heading -->
+                    <div class="panel-heading text-center" id="offer_image_9">
+                        <img class="img-responsive" src="/1_small_banner-foodcupboard.png" alt="Promo9">
+                    </div>
+                    <div class="panel-footer">
+                        <!-- Panel Footer -->
+                        <div class="promo-footer">
+                            Comida de Alacena
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="promo_010">
+            <a href="/comida-alacena" style="text-decoration:none;">
+                <div class="panel panel-default">
+                    <!-- Panel Heading -->
+                    <div class="panel-heading text-center" id="offer_image_10">
+                        <img class="img-responsive" src="/5_small_banner-pets_original.png" alt="Promo10">
+                    </div>
+                    <div class="panel-footer">
+                        <!-- Panel Footer -->
+                        <div class="promo-footer">
+                            Animales
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 </template>

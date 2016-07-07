@@ -1,6 +1,15 @@
-<template name="animaLayout">
-  <section class="container-fluid" style="padding-left:125px;">
-    {{#each animal}}
+<template name="beveragesProducts">
+    <div class="container-fluid hidden-xs" id="right_container_hidden_xs">
+        <div id="left_margin">
+            {{#each beverages}} {{>beveragesLayout}} {{/each}}
+        </div>
+    </div>
+    <div class="container-fluid visible-xs" id="right_container_visible_xs">
+        {{#each beverages}} {{>beveragesLayout}} {{/each}}
+    </div>
+</template>
+
+<template name="beveragesLayout">
     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
         <div class="panel panel-default">
             <!-- Panel Heading -->
@@ -28,6 +37,4 @@
             </div>
         </div>
     </div>
-    {{/each}}
-      </section>
 </template>

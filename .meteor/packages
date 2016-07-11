@@ -25,8 +25,15 @@ kadira:flow-router
 kadira:blaze-layout
 natestrauser:font-awesome
 cfs:standard-packages
-meteortoys:allthings
-cfs:gridfs
+cfs:autoform
 khrone:img-qrcode
 fortawesome:fontawesome
 session
+aldeed:simple-schema
+aldeed:collection2
+cfs:ui
+anti:fake
+dburles:factory
+cfs:gridfs
+meteortoys:allthings
+jimmiebtlr:cart

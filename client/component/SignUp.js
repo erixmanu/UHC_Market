@@ -1,4 +1,3 @@
-if (Meteor.isClient) {
     Template.signup.events({
         'submit form': function(event) {
             event.preventDefault();
@@ -19,7 +18,7 @@ if (Meteor.isClient) {
             Meteor.loginWithPassword(emailVar, passwordVar);
         }
     });
-}
+
 Template.settings.events({
     'click .logout': function(event) {
         event.preventDefault();
@@ -32,9 +31,3 @@ Template.settings.helpers({
         return Session.get('user');
     }
 });
-
-if (Meteor.isServer) {
-    Meteor.startup(function() {
-        // code to run on server at startup
-    });
-}

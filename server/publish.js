@@ -39,11 +39,11 @@ Meteor.publish('pets', function() {
     return Pets.find();
 });
 
+Meteor.publish('produtcs', function() {
+    return Produtcs.find();
+});
+
 //publis data base images FS
 Meteor.publish('images', function() {
     return Images.find();
-});
-
-Meteor.publish('EntriesImage', function() {
-    return EntriesImages.find();
 });

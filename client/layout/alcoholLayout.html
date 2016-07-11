@@ -1,7 +1,7 @@
 <template name="alcoholProducts">
     <div class="container-fluid hidden-xs" id="right_container_hidden_xs">
         <div id="left_margin">
-            {{#each alcohol}} {{>alcoholLayout}} {{/each}}
+            {{#each alcohol}}    {{>alcoholLayout}} {{/each}}
         </div>
     </div>
     <div class="container-fluid visible-xs" id="right_container_visible_xs">
@@ -17,14 +17,17 @@
                 <div class="jumbotron jumbotron-icon">
                     <div class="container" id="icon-container">
                         <div class="info-icons">
-                            <i class="fa fa-plus-circle fa-6" aria-hidden="true"></i>
+                            <!-- <i class="fa fa-plus-circle fa-6" aria-hidden="true"></i> -->
+                            {{#with FS.GetFile "images" (img)}}
+                              <img src="{{this.url}}" class="img-responsive" alt="ImgDb" width="170" height="100">
+                              {{/with}}
                         </div>
                     </div>
                 </div>
             </div>
             <div class="panel-body" id="product_description">
                 <!-- Panel Body -->
-                <div class="name">{{name}}
+                <div class="name">{{title}}
                 </div>
                 <div class="price">{{price}}
                 </div>

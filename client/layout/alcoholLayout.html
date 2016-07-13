@@ -1,17 +1,18 @@
 <template name="alcoholProducts">
     <div class="container-fluid hidden-xs" id="right_container_hidden_xs">
         <div id="left_margin">
-            {{#each alcohol}}    {{>alcoholLayout}} {{/each}}
+            {{#each products}}    {{>alcoholLayout}} {{/each}}
         </div>
     </div>
     <div class="container-fluid visible-xs" id="right_container_visible_xs">
-        {{#each alcohol}} {{>alcoholLayout}} {{/each}}
+        {{#each products}} {{>alcoholLayout}} {{/each}}
     </div>
 </template>
 
 <template name="alcoholLayout">
     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
         <div class="panel panel-default">
+          <a href="#openModal" id="link" data-id="{{_id}}">
             <!-- Panel Heading -->
             <div class="panel-heading" id="product_image">
                 <div class="jumbotron jumbotron-icon">
@@ -19,12 +20,13 @@
                         <div class="info-icons">
                             <!-- <i class="fa fa-plus-circle fa-6" aria-hidden="true"></i> -->
                             {{#with FS.GetFile "images" (img)}}
-                              <img src="{{this.url}}" class="img-responsive" alt="ImgDb" width="170" height="100">
-                              {{/with}}
+                            <img src="{{this.url}}" class="img-responsive" alt="Reload">
+                            {{/with}}
                         </div>
                     </div>
                 </div>
             </div>
+            </a>
             <div class="panel-body" id="product_description">
                 <!-- Panel Body -->
                 <div class="name">{{title}}
@@ -41,4 +43,15 @@
         </div>
     </div>
 
+    <div id="openModal" class="modalDialog">
+      <div>
+    		<a href="#close" title="Close" class="close">X</a>
+        {{#each item}}
+    		<h2>Modal Box</h2>
+
+    	      {{_id}}
+            {{title}}
+        {{/each}}
+      </div>
+    </div>
 </template>

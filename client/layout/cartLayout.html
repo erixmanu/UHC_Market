@@ -26,18 +26,41 @@
   </div>
 </div>
 <p>Total a pagar: <strong>{{totalPrice}}$</strong></p>
-{{#if currentUser}}
-  <div>
-    <button id="pay" class="btn btn-primary">
-      <i class="glyphicon glyphicon-shopping-cart"></i>
-      Pagar
-    </button>
-  </div>
-{{else}}
-  <p>No puedes pagar sin estar registrado: ¡monstruo desaprensivo!</p>
-{{/if}}
-<br>
-<br>
 </div>
 
+<form class="form-horizontal well">
+  <fieldset>
+    <legend>Datos del pago</legend>
+    <div class="form-group">
+      <label class="col-lg-2 control-label">Número de tarjeta</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="ccnum" placeholder="número..." required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-lg-2 control-label">Fecha expiración</label>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" id="exp-year" placeholder="Año" required>
+      </div>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" id="exp-month" placeholder="Mes" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-lg-2 control-label">CVC</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="cvc" placeholder="Email" required>
+      </div>
+    </div>
+    {{#if currentUser}}
+    <div class="form-group">
+      <button id="pay" class="btn btn-primary" type="submit">
+        <i class="glyphicon glyphicon-shopping-cart"></i> Pagar
+      </button>
+    </div>
+    {{else}}
+  <p>No puedes pagar sin estar registrado: ¡monstruo desaprensivo!</p>
+    {{/if}}
+  </fieldset>
+</form>
 </template>

@@ -1,11 +1,11 @@
 <template name="babyProducts">
     <div class="container-fluid hidden-xs" id="right_container_hidden_xs">
         <div id="left_margin">
-            {{#each baby}} {{>babyLayout}} {{/each}}
+            {{#each products}} {{>babyLayout}} {{/each}}
         </div>
     </div>
     <div class="container-fluid visible-xs" id="right_container_visible_xs">
-        {{#each baby}} {{>babyLayout}} {{/each}}
+        {{#each products}} {{>babyLayout}} {{/each}}
     </div>
 </template>
 
@@ -18,14 +18,16 @@
                 <div class="jumbotron jumbotron-icon">
                     <div class="container" id="icon-container">
                         <div class="info-icons">
-                            <i class="fa fa-plus-circle fa-6" aria-hidden="true"></i>
+                          {{#with FS.GetFile "images" (img)}}
+                          <img src="{{this.url}}" class="img-responsive" alt="Reload">
+                          {{/with}}
                         </div>
                     </div>
                 </div>
             </div>
             <div class="panel-body" id="product_description">
                 <!-- Panel Body -->
-                <div class="name">{{name}}
+                <div class="name">{{title}}
                 </div>
                 <div class="price">{{price}}
                 </div>

@@ -19,14 +19,14 @@
         }
     });
 
-Template.settings.events({
+Template.navbar.events({
     'click .logout': function(event) {
         event.preventDefault();
         Meteor.logout();
     }
 });
 
-Template.settings.helpers({
+Template.navbar.helpers({
     'send_c': function() {
         return Session.get('user');
     }

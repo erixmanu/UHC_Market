@@ -215,5 +215,6 @@ Template.cartLayout.helpers({
 Template.cartLayout.events({
   "click #pay": function(event, template){
     alert('pagando!');
+    Cart.empty( );
   }
 });

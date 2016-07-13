@@ -1,21 +1,37 @@
 /*<script type="text/javascript" src="//jp-tags.mediaforge.com/js/4129?catID=cakes-sweet-pies"></script>*/
 
 .navbar, .navbar-header, #container-fluid {
-    background-color: #7B1FA2;
+    background-color: #691A99;
     font-color: #FFFFFF;
+}
+/*Login button navbar*/
+button.logout{
+  background-color: #68EFAD; /* Green */
+    border: none;
+    color: white;
+    /*padding: 15px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    width: 50px;
+    border-radius: 2px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 ul {
     /*Cart, Sign up, Log in*/
     font-family: 'Source Sans Pro' !important;
-    font-size: 16px;
+    font-size: 14px;
 }
 a.navbar-brand {
     /*UHC_Market - Brand*/
     font-family: 'Source Sans Pro' !important;
     font-size: 24px;
 }
-.input-group {
-    width: 100%;
+input#Signup {
+    background-color: #68EFAD;
+    border: none;
+    border-radius: 2px;
 }
 .form-group {
     padding-left: 12px;
@@ -132,7 +148,8 @@ height: 90px;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    background-color: #64DD17;
+    background-color: #68EFAD;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .shelfHeader {
     margin-top: 0.5em;
@@ -415,3 +432,20 @@ a {
 }
 
 .close:hover { background: #00d9ff; }
+
+/***********************************************
+                CART LAYOUT
+************************************************/
+input#ccnum.form-control, input#exp-year.form-control,input#exp-month.form-control,input#cvc.form-control {
+  color: #000000;
+}
+
+input.style-5{
+  padding: 10px;
+  border: solid 1px #fff;
+  transition: box-shadow 0.3s;
+   color: #000000;
+}
+input.style-5:focus, input.style-5.focus {
+  color: #000000;
+}

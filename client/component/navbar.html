@@ -8,14 +8,29 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">UHC Market</a>
+        <a class="navbar-brand" href="/">UHC Market</a>
         <!-- <div class='navbar-brand'>UHC Market</div> -->
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapsed">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Cart</a></li>
-          <li><a class="js-show-login" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a class="js-show-Ingresar" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li>  <div class="login">
+                {{#if currentUser}}
+
+              <button type="button" name="button" class="logout">logout</button>
+                <!-- <center><p><a href="#" class="logout">Logout</a></p></center> -->
+                 {{else}}
+                <div id="container_register" style='display:none;'>
+                    {{>signup}}
+                </div>
+                <div id="container_login" style='display:none;'>
+                    {{>login}}
+                </div>
+                {{/if}}
+            </div>
+          </li>
+          <li><a href="/cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Cart</a></li>
+          <li><a class="js-show-login" href=""><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a class="js-show-Ingresar" href=""><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
         <div class="row">
           <div class="col-xs-12 col-sm-5 col-md-6 col-lg-7">
@@ -30,17 +45,17 @@
           </div>
         </div>
         <ul class="nav navbar-nav visible-xs">
-          <h4 id="category">Categorías</h4>
-          <li><a href="/animales">Animales</a></li>
-          <li><a href="/bebes">Bebés</a></li>
-          <li><a href="/bebidas-alcoholicas">Bebidas Alcohólicas</a></li>
-          <li><a href="/carnes-mariscos">Carnes y Mariscos</a></li>
-          <li><a href="/comida-alacena">Comida de Alacena</a></li>
-          <li><a href="/frutas-vegetales">Frutas y Vegetales</a></li>
-          <li><a href="/helados">Helados</a></li>
-          <li><a href="/hogar">Hogar</a></li>
-          <li><a href="/panaderia">Panadería</a></li>
-          <li><a href="/refrescos">Refrescos</a></li>
+          <h4 id="category">Categories</h4>
+          <li><a href="/pets">Animals</a></li>
+          <li><a href="/baby">Baby</a></li>
+          <li><a href="/alcohol">Alcohol</a></li>
+          <li><a href="/meat_seafood">Meat And Seafood</a></li>
+          <li><a href="/food_cupboard">Food Cupboard</a></li>
+          <li><a href="/fruit_vegetables">Fruit and Vegetables</a></li>
+          <li><a href="/frozen">Frozen</a></li>
+          <li><a href="/household">House Hold</a></li>
+          <li><a href="/bakery">Bakery</a></li>
+          <li><a href="/beverages">Beverages</a></li>
         </ul>
       </div>
     </div>
@@ -68,17 +83,17 @@
         <!-- <div class="collapse navbar-collapse" id="collapse"> -->
   		  <div class="collapse navbar-collapse navbar-fixed-top" id="collapse" style="padding-top:60px;padding-left:0px;padding-right:0px;width:125px;">
     			<ul class="nav nav-pills nav-stacked hidden-xs">
-    			  <h4 id="category">Categorías</h4>
-    				<li><a id="cat_1" href="/animales">Animales</a></li>
-    				<li><a id="cat_2" href="/bebes">Bebés</a></li>
-    				<li><a id="cat_3" href="/bebidas-alcoholicas">Bebidas Alcohólicas</a></li>
-    				<li><a id="cat_4" href="/carnes-mariscos">Carnes y Mariscos</a></li>
-    				<li><a id="cat_5" href="/comida-alacena">Comida de Alacena</a></li>
-            <li><a id="cat_6" href="/frutas-vegetales">Frutas y Vegetales</a></li>
-            <li><a id="cat_7" href="/helados">Helados</a></li>
-    				<li><a id="cat_8" href="/hogar">Hogar</a></li>
-    				<li><a id="cat_9" href="/panaderia">Panadería</a></li>
-    				<li><a id="cat_10" href="/refrescos">Refrescos</a></li>
+            <h4 id="category">Categories</h4>
+            <li><a href="/pets">Animals</a></li>
+            <li><a href="/baby">Baby</a></li>
+            <li><a href="/alcohol">Alcohol</a></li>
+            <li><a href="/meat_seafood">Meat And Seafood</a></li>
+            <li><a href="/food_cupboard">Food Cupboard</a></li>
+            <li><a href="/fruit_vegetables">Fruit and Vegetables</a></li>
+            <li><a href="/frozen">Frozen</a></li>
+            <li><a href="/household">House Holdr</a></li>
+            <li><a href="/bakery">Bakery</a></li>
+            <li><a href="/beverages">Beverages</a></li>
     			</ul>
   		  </div>
   		</aside><!--aside-->

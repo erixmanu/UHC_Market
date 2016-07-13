@@ -1,24 +1,17 @@
 <template name="signup">
     <h2>Signup</h2>
     <form>
-        <input type="email" name="signupEmail" placeholder="Email" required>
-        <input type="password" name="signupPassword" placeholder="Password" required>
-        <input type="submit" value="Signup">
+        <input type="email" class="style-5" name="signupEmail" placeholder="Email" required><br><br>
+        <input type="password" class="style-5" name="signupPassword" placeholder="Password" required><br><br>
+        <input type="submit" value="Signup" id="Signup">
     </form>
 </template>
 
 <template name="login">
     <h2>Log in</h2>
     <form>
-        <input type="email" name="loginEmail" placeholder="Email">
-        <input type="password" name="loginPassword" placeholder="Password">
-        <input type="submit" value="Login">
+        <input type="email" class="style-5" name="loginEmail" placeholder="Email"><br><br>
+        <input type="password" class="style-5" name="loginPassword" placeholder="Password"><br><br>
+        <input type="submit" value="Login" id="Signup">
     </form>
-</template>
-
-<template name="settings">
-
-    <p>You're logged in!</p>
-    <p>{{send_c}}</p>
-    <p><a href="#" class="logout">Logout</a></p>
 </template>

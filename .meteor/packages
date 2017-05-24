@@ -32,9 +32,9 @@ session
 aldeed:simple-schema
 aldeed:collection2
 cfs:ui
-anti:fake
-dburles:factory
+dburles:factory         # https://atmospherejs.com/cfs/ui  Provides additional UI helpers for CollectionFS.
 cfs:gridfs
+cfs:filesystem
 meteortoys:allthings
 jimmiebtlr:cart
 mrgalaxy:stripe
